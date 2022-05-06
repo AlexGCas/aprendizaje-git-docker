@@ -48,8 +48,8 @@ Git es un sistema de control de versiones, es decir, un software que permite gua
 
 - ## Comandos de configuración de github:
     - `$git config --list`: lista las configuraciones de git
-    - `$git config --global user.name "alexander garcia"`: cambia  el nombre en la configuración.
-    - `$git config --global user.email "araragi.estudios@gmail.com"`: cambia el correo en la configuración global
+    - `$git config --global user.name "nombre de usuario"`: cambia  el nombre en la configuración.
+    - `$git config --global user.email "correoEjemplo@gmail.com"`: cambia el correo en la configuración global
 - `$git init`: inicia un repositorio de git en la carpeta actual.
 - `$git add .`: añade todos los archivos a la staging area de git (los cambios están listos para ser guardados) `$git add ./archivo` añade un archivo específico.
 - `$git reset archivo`: envia un archivo de la etapa de tracked a untraked.
