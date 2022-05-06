@@ -1,5 +1,5 @@
 # Docker y git
-## Ubjetivo general: 
+## Objetivo general: 
 Diseñar una aplicación backend utiliando github, docker, insomnia y python, la aplicación debe recoger información de la API https://pokeapi.co/.
 ## Objetivos específicos:
 - Crear un dockerfile para definir los requerimientos del container.
@@ -46,19 +46,20 @@ Git es un sistema de control de versiones, es decir, un software que permite gua
 
 <br>
 
-- ### Comandos de configuración de github:
+- ## Comandos de configuración de github:
     - `$git config --list`: lista las configuraciones de git
     - `$git config --global user.name "alexander garcia"`: cambia  el nombre en la configuración.
     - `$git config --global user.email "araragi.estudios@gmail.com"`: cambia el correo en la configuración global
 - `$git init`: inicia un repositorio de git en la carpeta actual.
 - `$git add .`: añade todos los archivos a la staging area de git (los cambios están listos para ser guardados) `$git add ./archivo` añade un archivo específico.
 - `$git reset archivo`: envia un archivo de la etapa de tracked a untraked.
-- ### .gitignore:
+- ## .gitignore:
     -  Archivo que guarda los nombres de todos los archivos y carpetas dentro del repositorio que no necesitan se trackeados.
     - normalmente se colocan archivos con contraseñas, módulos instalados, etc.
-- ### Conexión del repositorio a github:
+- ## Conexión del repositorio a github:
     - `$git remote`: da información de repositorios remotos conectados al repositorio local.
-    - `$git remote add `
+    - `$git remote add origin https://github.com/AlexGCas/aprendizaje-git-docker.git`: añade el repositorio remoto al repositorio local.
+    - `$git push -u origin master`: envía el código en el repositorio local al repositorio en github.
 
 # Docker
 Docker permite crear una imagen de la aplicación, esta imágen contiene todo lo que la aplicación necesita para ser ejecutada, sistema operativo, dependencias, código fuente, etc. Para que el contenedor tenga acceso al repositorio de git, el dockerfile debe estar al mismo nivel del repositorio.
