@@ -28,6 +28,10 @@ Los ambientes virtuales en python, permiten instalar dependencias específicas d
 - `$pip list`: comando de pip que permite ver los paquetes instalados.
 - `$deactivate`: para salir del ambiente virtual.
 - `$rm -rf venv`: elimina el ambiente virtual.
+- configurar jupyter notebook para correr en un ambiente virtual (dentro del ambiente virtual): https://stackoverflow.com/questions/42449814/running-jupyter-notebook-in-a-virtualenv-installed-sklearn-module-not-available
+    - `pip install ipykernel`
+    - `python -m ipykernel install --user --name=my-virtualenv-name`
+- `$jupyter-kernelspec uninstall venv`: desinstala el ambiente virtual del kernel
 
 
 # Git y github
@@ -60,6 +64,14 @@ Git es un sistema de control de versiones, es decir, un software que permite gua
     - `$git remote`: da información de repositorios remotos conectados al repositorio local.
     - `$git remote add origin https://github.com/AlexGCas/aprendizaje-git-docker.git`: añade el repositorio remoto al repositorio local.
     - `$git push -u origin master`: envía el código en el repositorio local al repositorio en github.
+- ## merge:
+    - Para hacer un merge, todos los cambios en el repositorio local deben ser guardados primero
+        - `$git add .`
+        - `$git commit -m "mensaje"`
+    - Buscar los cambios en el repositorio remoto
+        - `$git fetch`
+    - combinar el repositorio remoto al local
+        - `$git merge origin/master`
 
 # Docker
 Docker permite crear una imagen de la aplicación, esta imágen contiene todo lo que la aplicación necesita para ser ejecutada, sistema operativo, dependencias, código fuente, etc. Para que el contenedor tenga acceso al repositorio de git, el dockerfile debe estar al mismo nivel del repositorio.
