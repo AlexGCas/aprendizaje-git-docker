@@ -1,4 +1,4 @@
-# Docker y git
+# Docker, Git y venv
 ## Objetivo general: 
 Diseñar una aplicación backend utiliando github, docker, insomnia y python, la aplicación debe recoger información de la API https://pokeapi.co/.
 ## Objetivos específicos:
